@@ -6,6 +6,8 @@ import java.util.Map;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
+
 public class Configuration {
 	
 
@@ -38,6 +40,7 @@ public class Configuration {
 	 */
 	public void setUsers(Map<String, User> users) {
 		this.users = users;
+		System.out.println("changed");
 	}
 	
     @Override
